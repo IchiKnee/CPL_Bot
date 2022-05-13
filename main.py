@@ -7,7 +7,7 @@ import time
 import asyncio
 
 load_dotenv()
-TOKEN = os.getenv('CPL_DEV_TOKEN')
+TOKEN = os.getenv('CPL_OFFICIAL_TOKEN')
 
 client = discord.Client()
 
@@ -29,7 +29,7 @@ async def on_message(msg):
         return
 
     # Give Korbine an L
-    if "rokuro" in username.lower():
+    if "korbine" in username.lower():
         await msg.add_reaction('\U0001F1F1')
 
     # Continue the chain gif train
